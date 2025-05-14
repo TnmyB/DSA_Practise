@@ -1,5 +1,26 @@
 // https://leetcode.com/problems/linked-list-cycle-ii/description/
 
+// Approach - 1
+// Brute -
+// Use hashmap, hash all nodes and see if there is a match
+// TC = O(n)
+// SC = O(n)
+
+
+
+// Approach - 2
+// slow fast algorithm
+// TC = O(n)
+// SC = O(1)
+//
+// Intution:
+// Slow = L1 + L2
+// Fast = L1 + L2 + nC
+// fast = 2 * slow
+// L1 + L2 + nC = 2*L1 + 2*L2
+// nC = L1 + L2
+// L1 = nC - L2
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
